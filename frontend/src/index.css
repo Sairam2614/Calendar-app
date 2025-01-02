@@ -1,0 +1,114 @@
+@import 'react-calendar/dist/Calendar.css';
+/* @import "/node_modules/@fullcalendar/core/main.css";
+@import "/node_modules/@fullcalendar/daygrid/main.css";
+@import "/node_modules/@fullcalendar/timegrid/main.css";
+@import "/node_modules/@fullcalendar/list/main.css"; */
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @layer base {
+  body {
+    @apply font-poppins;
+  }
+} */
+
+/* .calendar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 800px;
+}
+
+.custom-calendar {
+  width: 100%;
+  max-width: 600px;
+  background: #ffffff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.react-calendar__tile {
+  height: 60px;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.react-calendar__tile:hover {
+  background: #f0f8ff;
+  transform: scale(1.1);
+  border-radius: 6px;
+}
+
+.highlighted-date {
+  background-color: #ffcccb;
+  color: black;
+  border-radius: 50%;
+  font-weight: bold;
+}
+
+.react-calendar__month-view__weekdays {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007acc;
+}
+
+.date-details {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  text-align: left;
+}
+
+.date-details h3 {
+  color: #333;
+}
+
+.date-details ul {
+  list-style: none;
+  padding: 0;
+}
+
+.date-details ul li {
+  margin: 5px 0;
+  font-size: 1rem;
+} */
+
+
+/* Ensure the event text is always visible */
+.fc-event {
+  background-color: transparent !important; /* Remove background color */
+  color:black !important; /* Set text color to black */
+  border: none !important; /* Remove any border */
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Adjust padding for cleaner look */
+.fc-daygrid-event {
+  padding: 0 !important;
+}
+
+/* Hover effect to improve UX */
+.fc-event:hover {
+  text-decoration: underline;
+  color: #333 !important; /* Slightly darker on hover */
+}
+
+/* Full cell clickable area */
+.fc-daygrid-day-frame {
+  cursor: pointer;
+}
+
+

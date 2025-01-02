@@ -1,0 +1,32 @@
+/* Ensure the event text is always visible */
+.fc-event {
+    background-color: transparent !important; /* Remove background color */
+    color:black !important; /* Set text color to black */
+    border: none !important; /* Remove any border */
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* Adjust padding for cleaner look */
+.fc-daygrid-event {
+    padding: 0 !important;
+}
+
+/* Hover effect to improve UX */
+.fc-event:hover {
+    text-decoration: underline;
+    color: #333 !important; /* Slightly darker on hover */
+}
+
+/* Full cell clickable area */
+.fc-daygrid-day-frame {
+    cursor: pointer;
+}
+
+.fc-day-today {
+    background-color: yellow !important; /* Gold color */
+    color: black !important; /* Text color */
+    border-radius: 5px; /* Optional: Add a border radius */
+}
+  
+
